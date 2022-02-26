@@ -3,6 +3,9 @@ from .models import Team
 from django.utils.html import format_html
 
 
+<<<<<<< HEAD
+
+=======
 class TeamAdmin(admin.ModelAdmin):
     def thumbnail(self, object):
         return format_html(
@@ -24,3 +27,4 @@ class TeamAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Team, TeamAdmin)
+>>>>>>> main
