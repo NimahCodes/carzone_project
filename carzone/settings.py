@@ -69,6 +69,10 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "carzone.wsgi.application"
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 
 AUTHENTICATION_BACKENDS = (("django.contrib.auth.backends.ModelBackend"),)
 # Database
@@ -76,12 +80,17 @@ AUTHENTICATION_BACKENDS = (("django.contrib.auth.backends.ModelBackend"),)
 
 DATABASES = {
     "default": {
+<<<<<<< HEAD
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "carzone_db",
         "USER": "postgres",
         "PASSWORD": "1234",
         "HOST": "localhost",
         "PORT": "5432",
+=======
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+>>>>>>> main
     }
 }
 
@@ -120,12 +129,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
+<<<<<<< HEAD
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "carzone/static"),
 ]
+=======
+STATIC_URL = "static/"
+>>>>>>> main
 
+# Media seettings for
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_URL = "/media/"
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 

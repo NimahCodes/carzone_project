@@ -14,7 +14,15 @@
                     <h3>Wow Factor Standard</h3>
                     <h5>Allow us to guide you through the innovative stress<br>
                         free approach in finding your dream car.</h5>
+<<<<<<< HEAD
                     <a href="{% url 'services' %}" class="btn btn-lg btn-theme">Read more</a>
+=======
+<<<<<<< HEAD
+                    <a href="services.html" class="btn btn-lg btn-theme">Read more</a>
+=======
+                    <a href="{% url 'services' %}" class="btn btn-lg btn-theme">Read more</a>
+>>>>>>> main
+>>>>>>> main
                 </div>
             </div>
             <div class="carousel-item banner-max-height item-bg">
@@ -899,11 +907,20 @@
         <!-- Slick slider area start -->
         <div class="slick-slider-area clearfix">
             <div class="row slick-carousel" data-slick='{"slidesToShow": 4, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+<<<<<<< HEAD
+=======
+                {% for team in teams %}
+>>>>>>> main
                 <div class="slick-slide-item">
                     <div class="team-1">
                         <div class="photo">
                             <a href="#">
+<<<<<<< HEAD
                                 <img src="{% static 'img/avatar/avatar-12.jpg' %}" alt="team-1" class="img-fluid">
+=======
+<<<<<<< HEAD
+                                <img src="img/avatar/avatar-12.jpg" alt="team-1" class="img-fluid">
+>>>>>>> main
                             </a>
                             <div class="social-list clearfix">
                                 <a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a>
@@ -989,6 +1006,23 @@
                         </div>
                     </div>
                 </div>
+=======
+                                <img src="{{ team.photo.url }}" alt="team-1" class="img-fluid">
+                            </a>
+                            <div class="social-list clearfix">
+                                <a href="{{ team.facebook_link }}" target="_blank" class="facebook-bg"><i class="fa fa-facebook"></i></a>
+                                <a href="{{ team.twitter_link }}#" target="_blank" class="twitter-bg"><i class="fa fa-twitter"></i></a>
+                                <a href="{{ team.google_plus_link }}" target="_blank" class="google-bg"><i class="fa fa-google"></i></a>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h4><a href="team-detail.html">{{team.first_name}} {{ last_name }}</a></h4>
+                            <h5>{{ team.designation }}</h5>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+>>>>>>> main
             </div>
         </div>
     </div>
@@ -1012,6 +1046,46 @@
 </div>
 <!-- Intro section end -->
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<!-- Footer start -->
+<footer class="footer">
+    
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <p class="copy">© 2020 <a href="#">Carzone Corp.</a> All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="social-list-2">
+                        <ul>
+                            <li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="google-bg"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer end -->
+
+<!-- Full Page Search -->
+<div id="full-page-search">
+    <button type="button" class="close">×</button>
+    <form action="https://storage.googleapis.com/theme-vessel/carhouse/index.html#" class="search-header">
+        <input type="search" value="" placeholder="type keyword(s) here. Eg: audi, benz etc" />
+        <button type="submit" class="btn btn-sm button-theme">Search</button>
+    </form>
+</div>
+
+=======
+>>>>>>> main
+>>>>>>> main
 <!-- Car Overview Modal -->
 <div class="car-model-2">
     <div class="modal fade" id="carOverviewModal" tabindex="-1" role="dialog" aria-labelledby="carOverviewModalLabel" aria-hidden="true">
